@@ -1,16 +1,14 @@
 #!/usr/bin/env python3
 """
 Génère un fichier concerts-metal.ics à partir de flux RSS de concerts-metal.com.
-À exécuter localement ou via GitHub Actions.
+Utilise cloudscraper pour contourner la protection anti-bot du site.
 """
 
 import re
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
 
-import requests
-from requests.adapters import HTTPAdapter
-from urllib3.util.retry import Retry
+import cloudscraper
 
 # === CONFIGURATION ===
 RSS_URLS = [
@@ -18,26 +16,18 @@ RSS_URLS = [
     "https://www.concerts-metal.com/rss/FR_Montreuil.xml",
 ]
 OUTPUT_FILE = "concerts-metal.ics"
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                  "(KHTML, like Gecko) Chrome/120.0 Safari/537.36"
-}
 # =====================
 
 
-def create_retry_session():
-    """Session HTTP avec 3 tentatives sur erreurs 5xx."""
-    session = requests.Session()
-    retry = Retry(
-        total=3,
-        backoff_factor=1,
-        status_forcelist=[500, 502, 503, 504],
-        allowed_methods=["GET"],
+def create_scraper():
+    """Crée un scraper qui imite un navigateur Chrome sur Windows."""
+    return cloudscraper.create_scraper(
+        browser={
+            'browser': 'chrome',
+            'platform': 'windows',
+            'desktop': True,
+        }
     )
-    adapter = HTTPAdapter(max_retries=retry)
-    session.mount("https://", adapter)
-    session.mount("http://", adapter)
-    return session
 
 
 def escape_ics(text):
@@ -63,6 +53,10 @@ def parse_event(item, seen_uids):
     title_text = title_elem.text.strip()
     link = link_elem.text.strip() if link_elem is not None and link_elem.text else ""
 
+    # Retirer le paramètre de tracking ?rss=... ajouté par le flux
+    # Regex permissive : supprime ?rss=... n'importe où dans l'URL
+    link = re.sub(r'\?rss=[^&\s]*', '', link).strip()
+
     # Date extraite du <title> (le <pubDate> est la date de publication, pas du concert)
     match = re.search(r'(\d{4}-\d{2}-\d{2})', title_text)
     if not match:
@@ -73,7 +67,7 @@ def parse_event(item, seen_uids):
     except ValueError:
         return None
 
-    # Déduplication
+    # Déduplication par lien (ou date+titre si pas de lien)
     uid = link if link else f"{date_str}-{title_text}"
     if uid in seen_uids:
         return None
@@ -125,21 +119,14 @@ def event_to_ics(event):
 
 
 def main():
-    session = create_retry_session()
-    ics_lines = [
-        "BEGIN:VCALENDAR",
-        "VERSION:2.0",
-        "PRODID:-//Metal Concerts//RSS to ICS//FR",
-        "CALSCALE:GREGORIAN",
-        "X-WR-CALNAME:Concerts Metal Paris & Montreuil",
-    ]
+    scraper = create_scraper()
     seen_uids = set()
-    event_count = 0
+    events = []  # on collecte d'abord tous les événements
 
     for rss_url in RSS_URLS:
         print(f"Téléchargement de {rss_url} ...")
         try:
-            response = session.get(rss_url, headers=HEADERS, timeout=30)
+            response = scraper.get(rss_url, timeout=30)
             response.raise_for_status()
             root = ET.fromstring(response.content)
         except Exception as e:
@@ -153,17 +140,27 @@ def main():
 
         for item in channel.findall('item'):
             event = parse_event(item, seen_uids)
-            if event is None:
-                continue
-            ics_lines.extend(event_to_ics(event))
-            event_count += 1
+            if event is not None:
+                events.append(event)
 
+    # Tri par date croissante
+    events.sort(key=lambda e: e["date"])
+
+    ics_lines = [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        "PRODID:-//Metal Concerts//RSS to ICS//FR",
+        "CALSCALE:GREGORIAN",
+        "X-WR-CALNAME:Concerts Metal Paris & Montreuil",
+    ]
+    for event in events:
+        ics_lines.extend(event_to_ics(event))
     ics_lines.append("END:VCALENDAR")
 
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         f.write("\r\n".join(ics_lines))  # RFC 5545 : CRLF obligatoire
 
-    print(f"✅ {OUTPUT_FILE} généré : {event_count} événements.")
+    print(f"✅ {OUTPUT_FILE} généré : {len(events)} événements.")
 
 
 if __name__ == "__main__":

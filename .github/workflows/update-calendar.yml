@@ -20,7 +20,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests
+        run: pip install cloudscraper
 
       - name: Generate ICS
         run: python generate_ics.py
