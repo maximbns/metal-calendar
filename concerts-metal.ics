@@ -3,4 +3,104 @@ VERSION:2.0
 PRODID:-//Metal Concerts//RSS to ICS//FR
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Concerts Metal Paris & Montreuil
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Come_-_European_Tour_2026-278237.html
+DTSTAMP:20261029T155458Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:Come - European Tour 2026
+URL:https://www.concerts-metal.com/concert_-_Come_-_European_Tour_2026-278237.html
+DESCRIPTION:Source: https://www.concerts-metal.com/concert_-_Come_-_European_Tour_2026-278237.html
+ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1791877518--Come---European-Tour-2026.jpeg
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_The_Jackson_Pollock_-_Tour_2026-277913.html
+DTSTAMP:20261029T155458Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:The Jackson Pollock - Tour 2026
+URL:https://www.concerts-metal.com/concert_-_The_Jackson_Pollock_-_Tour_2026-277913.html
+DESCRIPTION:Source: https://www.concerts-metal.com/concert_-_The_Jackson_Pollock_-_Tour_2026-277913.html
+ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1791664980--The-Jackson-Pollock---Tour-2026.jpg
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Lugosi_-_L_Idylle_-_Chiennes_-_The_Scars_Release_Party-281062.html
+DTSTAMP:20261029T155458Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Lugosi / L'Idylle / Chiennes - The Scars Release Party
+URL:https://www.concerts-metal.com/concert_-_Lugosi_-_L_Idylle_-_Chiennes_-_The_Scars_Release_Party-281062.html
+DESCRIPTION:Source: https://www.concerts-metal.com/concert_-_Lugosi_-_L_Idylle_-_Chiennes_-_The_Scars_Release_Party-281062.html
+ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1793188627--LUGOSi-_-L_IDYLLE-_-CHIENNES---The-Scars-Release-Party.jpg
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Downtown_Boys_-_Tour_2026-278378.html
+DTSTAMP:20261029T155458Z
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
+SUMMARY:Downtown Boys - Tour 2026
+URL:https://www.concerts-metal.com/concert_-_Downtown_Boys_-_Tour_2026-278378.html
+DESCRIPTION:Source: https://www.concerts-metal.com/concert_-_Downtown_Boys_-_Tour_2026-278378.html
+ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1791887859--Downtown-Boys---Tour-2026.jpg
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Cancervo___Oda___Witchbox-280597.html
+DTSTAMP:20261029T155458Z
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270124
+SUMMARY:Cancervo + Oda + Witchbox
+URL:https://www.concerts-metal.com/concert_-_Cancervo___Oda___Witchbox-280597.html
+DESCRIPTION:Source: https://www.concerts-metal.com/concert_-_Cancervo___Oda___Witchbox-280597.html
+ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1792999046--Cancervo.jpg
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Ingested_-_Tour_2027-281032.html
+DTSTAMP:20261029T155458Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:Ingested - Tour 2027
+URL:https://www.concerts-metal.com/concert_-_Ingested_-_Tour_2027-281032.html
+DESCRIPTION:Source: https://www.concerts-metal.com/concert_-_Ingested_-_Tour_2027-281032.html
+ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1793184042--Ingested---Tour-2027.jpg
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Samiam_-_Europe_2027-280177.html
+DTSTAMP:20261029T155458Z
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
+SUMMARY:Samiam - Europe 2027
+URL:https://www.concerts-metal.com/concert_-_Samiam_-_Europe_2027-280177.html
+DESCRIPTION:Source: https://www.concerts-metal.com/concert_-_Samiam_-_Europe_2027-280177.html
+ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1792670961--Samiam---Europe-2027.jpg
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_King_Gizzard_and_the_Lizard_wizard_Summer_tour_2027-280987.html
+DTSTAMP:20261029T155458Z
+DTSTART;VALUE=DATE:20270618
+DTEND;VALUE=DATE:20270619
+SUMMARY:King Gizzard and the Lizard wizard Summer tour 2027
+URL:https://www.concerts-metal.com/concert_-_King_Gizzard_and_the_Lizard_wizard_Summer_tour_2027-280987.html
+DESCRIPTION:Source: https://www.concerts-metal.com/concert_-_King_Gizzard_and_the_Lizard_wizard_Summer_tour_2027-280987.html
+ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1793119249--King-Gizzard-and-the-Lizard-wizard-Summer-tour-2027.jpg
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Till_Lindemann_-_World_Tour_2027-280699.html
+DTSTAMP:20261029T155458Z
+DTSTART;VALUE=DATE:20271111
+DTEND;VALUE=DATE:20271112
+SUMMARY:Till Lindemann - World Tour 2027
+URL:https://www.concerts-metal.com/concert_-_Till_Lindemann_-_World_Tour_2027-280699.html
+DESCRIPTION:Source: https://www.concerts-metal.com/concert_-_Till_Lindemann_-_World_Tour_2027-280699.html
+ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1793027772--Till-Lindemann---World-Tour-2027.jpg
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Bruce_Dickinson_-_PsychoGod_Tour__27-280891.html
+DTSTAMP:20261029T155458Z
+DTSTART;VALUE=DATE:20271210
+DTEND;VALUE=DATE:20271211
+SUMMARY:Bruce Dickinson - PsychoGod Tour '27
+URL:https://www.concerts-metal.com/concert_-_Bruce_Dickinson_-_PsychoGod_Tour__27-280891.html
+DESCRIPTION:Source: https://www.concerts-metal.com/concert_-_Bruce_Dickinson_-_PsychoGod_Tour__27-280891.html
+ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1793103627--Bruce-Dickinson---PsychoGod-Tour-_27.png
+END:VEVENT
 END:VCALENDAR
