@@ -4,8 +4,18 @@ PRODID:-//Metal Concerts//RSS to ICS//FR
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Concerts Metal Paris & Montreuil
 BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Kropolz___Destroy_Putas-281265.html
+DTSTAMP:20261031T113245Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Kropolz + Destroy Putas
+URL:https://www.concerts-metal.com/concert_-_Kropolz___Destroy_Putas-281265.html
+DESCRIPTION:Source: https://www.concerts-metal.com/concert_-_Kropolz___Destroy_Putas-281265.html
+ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1793338955--kROPOLZ-_-DESTROY-PUTAS.jpg
+END:VEVENT
+BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Festival_Resonance_93-281210.html
-DTSTAMP:20261030T115822Z
+DTSTAMP:20261031T113245Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:Festival Resonance 93
@@ -15,7 +25,7 @@ ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mi
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Lugosi_-_L_Idylle_-_Chiennes_-_The_Scars_Release_Party-281062.html
-DTSTAMP:20261030T115822Z
+DTSTAMP:20261031T113245Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:Lugosi / L'Idylle / Chiennes - The Scars Release Party
@@ -25,7 +35,7 @@ ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mi
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Nohz___Turquoise___Absolu___Electric_Doom_Synthesis-281204.html
-DTSTAMP:20261030T115822Z
+DTSTAMP:20261031T113245Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:Nohz + Turquoise + Absolu + Electric Doom Synthesis
@@ -34,18 +44,8 @@ DESCRIPTION:Source: https://www.concerts-metal.com/concert_-_Nohz___Turquoise___
 ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1793297055--NOHZ_TURQUOISE_ABSOLU_ELECTRIC-DOOM-SYNTHESIS.jpg
 END:VEVENT
 BEGIN:VEVENT
-UID:https://www.concerts-metal.com/concert_-_Downtown_Boys_-_Tour_2026-278378.html
-DTSTAMP:20261030T115822Z
-DTSTART;VALUE=DATE:20261214
-DTEND;VALUE=DATE:20261215
-SUMMARY:Downtown Boys - Tour 2026
-URL:https://www.concerts-metal.com/concert_-_Downtown_Boys_-_Tour_2026-278378.html
-DESCRIPTION:Source: https://www.concerts-metal.com/concert_-_Downtown_Boys_-_Tour_2026-278378.html
-ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1791887859--Downtown-Boys---Tour-2026.jpg
-END:VEVENT
-BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Cancervo___Oda___Witchbox-280597.html
-DTSTAMP:20261030T115822Z
+DTSTAMP:20261031T113245Z
 DTSTART;VALUE=DATE:20270123
 DTEND;VALUE=DATE:20270124
 SUMMARY:Cancervo + Oda + Witchbox
@@ -55,7 +55,7 @@ ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mi
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Ingested_-_Tour_2027-281032.html
-DTSTAMP:20261030T115822Z
+DTSTAMP:20261031T113245Z
 DTSTART;VALUE=DATE:20270201
 DTEND;VALUE=DATE:20270202
 SUMMARY:Ingested - Tour 2027
@@ -65,7 +65,7 @@ ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mi
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Samiam_-_Europe_2027-280177.html
-DTSTAMP:20261030T115822Z
+DTSTAMP:20261031T113245Z
 DTSTART;VALUE=DATE:20270213
 DTEND;VALUE=DATE:20270214
 SUMMARY:Samiam - Europe 2027
@@ -75,7 +75,7 @@ ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mi
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Ch_ahom___Evil_Warriors___Balmog-281190.html
-DTSTAMP:20261030T115822Z
+DTSTAMP:20261031T113245Z
 DTSTART;VALUE=DATE:20270228
 DTEND;VALUE=DATE:20270301
 SUMMARY:Ch'ahom + Evil Warriors + Balmog
@@ -85,7 +85,7 @@ ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mi
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_King_Gizzard_and_the_Lizard_wizard_Summer_tour_2027-280987.html
-DTSTAMP:20261030T115822Z
+DTSTAMP:20261031T113245Z
 DTSTART;VALUE=DATE:20270618
 DTEND;VALUE=DATE:20270619
 SUMMARY:King Gizzard and the Lizard wizard Summer tour 2027
@@ -95,7 +95,7 @@ ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mi
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_John_Bush_-_Celebrating_the_songs_of_Anthrax-281174.html
-DTSTAMP:20261030T115822Z
+DTSTAMP:20261031T113245Z
 DTSTART;VALUE=DATE:20270820
 DTEND;VALUE=DATE:20270821
 SUMMARY:John Bush - Celebrating the songs of Anthrax
