@@ -4,18 +4,18 @@ PRODID:-//Metal Concerts//RSS to ICS//FR
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Concerts Metal Paris & Montreuil
 BEGIN:VEVENT
-UID:https://www.concerts-metal.com/concert_-_Kropolz___Destroy_Putas-281265.html
-DTSTAMP:20261031T113245Z
-DTSTART;VALUE=DATE:20261031
-DTEND;VALUE=DATE:20261101
-SUMMARY:Kropolz + Destroy Putas
-URL:https://www.concerts-metal.com/concert_-_Kropolz___Destroy_Putas-281265.html
-DESCRIPTION:Source: https://www.concerts-metal.com/concert_-_Kropolz___Destroy_Putas-281265.html
-ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1793338955--kROPOLZ-_-DESTROY-PUTAS.jpg
+UID:https://www.concerts-metal.com/concert_-_Roadrunners_a_la_Marbrerie_a_Montreuil_-281361.html
+DTSTAMP:20261101T123000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Roadrunners à la Marbrerie à Montreuil
+URL:https://www.concerts-metal.com/concert_-_Roadrunners_a_la_Marbrerie_a_Montreuil_-281361.html
+DESCRIPTION:Source: https://www.concerts-metal.com/concert_-_Roadrunners_a_la_Marbrerie_a_Montreuil_-281361.html
+ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1793455647--Roadrunners-a-la-Marbrerie-a-Montreuil-.jpg
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Festival_Resonance_93-281210.html
-DTSTAMP:20261031T113245Z
+DTSTAMP:20261101T123000Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:Festival Resonance 93
@@ -25,7 +25,7 @@ ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mi
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Lugosi_-_L_Idylle_-_Chiennes_-_The_Scars_Release_Party-281062.html
-DTSTAMP:20261031T113245Z
+DTSTAMP:20261101T123000Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:Lugosi / L'Idylle / Chiennes - The Scars Release Party
@@ -34,28 +34,38 @@ DESCRIPTION:Source: https://www.concerts-metal.com/concert_-_Lugosi_-_L_Idylle_-
 ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1793188627--LUGOSi-_-L_IDYLLE-_-CHIENNES---The-Scars-Release-Party.jpg
 END:VEVENT
 BEGIN:VEVENT
-UID:https://www.concerts-metal.com/concert_-_Nohz___Turquoise___Absolu___Electric_Doom_Synthesis-281204.html
-DTSTAMP:20261031T113245Z
-DTSTART;VALUE=DATE:20261201
-DTEND;VALUE=DATE:20261202
-SUMMARY:Nohz + Turquoise + Absolu + Electric Doom Synthesis
-URL:https://www.concerts-metal.com/concert_-_Nohz___Turquoise___Absolu___Electric_Doom_Synthesis-281204.html
-DESCRIPTION:Source: https://www.concerts-metal.com/concert_-_Nohz___Turquoise___Absolu___Electric_Doom_Synthesis-281204.html
-ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1793297055--NOHZ_TURQUOISE_ABSOLU_ELECTRIC-DOOM-SYNTHESIS.jpg
+UID:https://www.concerts-metal.com/concert_-__Psycho_attack_over_Montreuil_2___Wampas_Psycho___Batmobile-281362.html
+DTSTAMP:20261101T123000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:Psycho attack over Montreuil #2 : Wampas Psycho + Batmobile
+URL:https://www.concerts-metal.com/concert_-__Psycho_attack_over_Montreuil_2___Wampas_Psycho___Batmobile-281362.html
+DESCRIPTION:Source: https://www.concerts-metal.com/concert_-__Psycho_attack_over_Montreuil_2___Wampas_Psycho___Batmobile-281362.html
+ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1793455816---Psycho-attack-over-Montreuil-2-_-Wampas-Psycho-_-Batmobile.jpg
 END:VEVENT
 BEGIN:VEVENT
-UID:https://www.concerts-metal.com/concert_-_Cancervo___Oda___Witchbox-280597.html
-DTSTAMP:20261031T113245Z
-DTSTART;VALUE=DATE:20270123
-DTEND;VALUE=DATE:20270124
-SUMMARY:Cancervo + Oda + Witchbox
-URL:https://www.concerts-metal.com/concert_-_Cancervo___Oda___Witchbox-280597.html
-DESCRIPTION:Source: https://www.concerts-metal.com/concert_-_Cancervo___Oda___Witchbox-280597.html
-ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1792999046--Cancervo.jpg
+UID:https://www.concerts-metal.com/concert_-_86_Crew___Two_Tone_Club___Hydrotones___Old_Reggae_Friends-281364.html
+DTSTAMP:20261101T123000Z
+DTSTART;VALUE=DATE:20270109
+DTEND;VALUE=DATE:20270110
+SUMMARY:8°6 Crew + Two Tone Club + Hydrotones + Old Reggae Friends
+URL:https://www.concerts-metal.com/concert_-_86_Crew___Two_Tone_Club___Hydrotones___Old_Reggae_Friends-281364.html
+DESCRIPTION:Source: https://www.concerts-metal.com/concert_-_86_Crew___Two_Tone_Club___Hydrotones___Old_Reggae_Friends-281364.html
+ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1793455948--86-Crew-_-Two-Tone-Club-_-Hydrotones-_-Old-Reggae-Friends.jpg
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-__Panam__not_dead_6___Cockney_Rejects___-281365.html
+DTSTAMP:20261101T123000Z
+DTSTART;VALUE=DATE:20270116
+DTEND;VALUE=DATE:20270117
+SUMMARY:Panam' not dead #6 : Cockney Rejects +
+URL:https://www.concerts-metal.com/concert_-__Panam__not_dead_6___Cockney_Rejects___-281365.html
+DESCRIPTION:Source: https://www.concerts-metal.com/concert_-__Panam__not_dead_6___Cockney_Rejects___-281365.html
+ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1793456039---Panam_-not-dead-6-_-Cockney-Rejects-_-.jpg
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Ingested_-_Tour_2027-281032.html
-DTSTAMP:20261031T113245Z
+DTSTAMP:20261101T123000Z
 DTSTART;VALUE=DATE:20270201
 DTEND;VALUE=DATE:20270202
 SUMMARY:Ingested - Tour 2027
@@ -64,18 +74,8 @@ DESCRIPTION:Source: https://www.concerts-metal.com/concert_-_Ingested_-_Tour_202
 ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1793184042--Ingested---Tour-2027.jpg
 END:VEVENT
 BEGIN:VEVENT
-UID:https://www.concerts-metal.com/concert_-_Samiam_-_Europe_2027-280177.html
-DTSTAMP:20261031T113245Z
-DTSTART;VALUE=DATE:20270213
-DTEND;VALUE=DATE:20270214
-SUMMARY:Samiam - Europe 2027
-URL:https://www.concerts-metal.com/concert_-_Samiam_-_Europe_2027-280177.html
-DESCRIPTION:Source: https://www.concerts-metal.com/concert_-_Samiam_-_Europe_2027-280177.html
-ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1792670961--Samiam---Europe-2027.jpg
-END:VEVENT
-BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Ch_ahom___Evil_Warriors___Balmog-281190.html
-DTSTAMP:20261031T113245Z
+DTSTAMP:20261101T123000Z
 DTSTART;VALUE=DATE:20270228
 DTEND;VALUE=DATE:20270301
 SUMMARY:Ch'ahom + Evil Warriors + Balmog
@@ -84,23 +84,23 @@ DESCRIPTION:Source: https://www.concerts-metal.com/concert_-_Ch_ahom___Evil_Warr
 ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1793287431--Ch_ahom-_-Evil-Warriors-_-Balmog.jpg
 END:VEVENT
 BEGIN:VEVENT
-UID:https://www.concerts-metal.com/concert_-_King_Gizzard_and_the_Lizard_wizard_Summer_tour_2027-280987.html
-DTSTAMP:20261031T113245Z
-DTSTART;VALUE=DATE:20270618
-DTEND;VALUE=DATE:20270619
-SUMMARY:King Gizzard and the Lizard wizard Summer tour 2027
-URL:https://www.concerts-metal.com/concert_-_King_Gizzard_and_the_Lizard_wizard_Summer_tour_2027-280987.html
-DESCRIPTION:Source: https://www.concerts-metal.com/concert_-_King_Gizzard_and_the_Lizard_wizard_Summer_tour_2027-280987.html
-ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1793119249--King-Gizzard-and-the-Lizard-wizard-Summer-tour-2027.jpg
+UID:https://www.concerts-metal.com/concert_-_Les_Ramoneurs_de_Menhirs_a_La_Marbrerie_a_Montreuil_-281366.html
+DTSTAMP:20261101T123000Z
+DTSTART;VALUE=DATE:20270306
+DTEND;VALUE=DATE:20270307
+SUMMARY:Les Ramoneurs de Menhirs à La Marbrerie à Montreuil
+URL:https://www.concerts-metal.com/concert_-_Les_Ramoneurs_de_Menhirs_a_La_Marbrerie_a_Montreuil_-281366.html
+DESCRIPTION:Source: https://www.concerts-metal.com/concert_-_Les_Ramoneurs_de_Menhirs_a_La_Marbrerie_a_Montreuil_-281366.html
+ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1793456167--Les-Ramoneurs-de-Menhirs-a-La-Marbrerie-a-Montreuil-.jpg
 END:VEVENT
 BEGIN:VEVENT
-UID:https://www.concerts-metal.com/concert_-_John_Bush_-_Celebrating_the_songs_of_Anthrax-281174.html
-DTSTAMP:20261031T113245Z
-DTSTART;VALUE=DATE:20270820
-DTEND;VALUE=DATE:20270821
-SUMMARY:John Bush - Celebrating the songs of Anthrax
-URL:https://www.concerts-metal.com/concert_-_John_Bush_-_Celebrating_the_songs_of_Anthrax-281174.html
-DESCRIPTION:Source: https://www.concerts-metal.com/concert_-_John_Bush_-_Celebrating_the_songs_of_Anthrax-281174.html
-ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1793277734--John-Bush---Celebrating-the-songs-of-Anthrax.png
+UID:https://www.concerts-metal.com/concert_-_Frank_Turner___The_Sleeping_Souls_-_Tour_2027-281391.html
+DTSTAMP:20261101T123000Z
+DTSTART;VALUE=DATE:20271026
+DTEND;VALUE=DATE:20271027
+SUMMARY:Frank Turner + The Sleeping Souls - Tour 2027
+URL:https://www.concerts-metal.com/concert_-_Frank_Turner___The_Sleeping_Souls_-_Tour_2027-281391.html
+DESCRIPTION:Source: https://www.concerts-metal.com/concert_-_Frank_Turner___The_Sleeping_Souls_-_Tour_2027-281391.html
+ATTACH;FMTTYPE=image/jpeg:https://www.concerts-metal.com/images/flyers/202610/mini_1793471680--Frank-Turner-_-The-Sleeping-Souls---Tour-2027.jpg
 END:VEVENT
 END:VCALENDAR
