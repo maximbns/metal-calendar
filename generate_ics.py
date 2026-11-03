@@ -1,37 +1,49 @@
 #!/usr/bin/env python3
 """
-Génère un fichier concerts-metal.ics à partir de flux RSS de concerts-metal.com.
-Utilise cloudscraper pour contourner la protection anti-bot du site.
+Génère un fichier concerts-metal.ics à partir de la page broadcast de concerts-metal.com,
+en filtrant sur Paris et Montreuil.
 """
 
 import re
-import xml.etree.ElementTree as ET
-from datetime import datetime, timedelta
+import time
+import html as html_module
+from datetime import datetime, timedelta, timezone
 
 import cloudscraper
 
 # === CONFIGURATION ===
-RSS_URLS = [
-    "https://www.concerts-metal.com/rss/FR_Paris.xml",
-    "https://www.concerts-metal.com/rss/FR_Montreuil.xml",
-]
+BROADCAST_URL = "https://broadcast.concerts-metal.com/i-1500__fr.html"
 OUTPUT_FILE = "concerts-metal.ics"
+CITIES = {"paris", "montreuil"}
 # =====================
 
 
 def create_scraper():
-    """Crée un scraper qui imite un navigateur Chrome sur Windows."""
     return cloudscraper.create_scraper(
-        browser={
-            'browser': 'chrome',
-            'platform': 'windows',
-            'desktop': True,
-        }
+        browser={'browser': 'chrome', 'platform': 'windows', 'desktop': True}
     )
 
 
+def fetch_page(scraper, url, retries=3, wait=5):
+    last_error = None
+    for attempt in range(1, retries + 1):
+        try:
+            print(f"  Tentative {attempt}/{retries} ...")
+            response = scraper.get(url, timeout=30)
+            if response.status_code == 200:
+                return response
+            last_error = f"HTTP {response.status_code}"
+            print(f"  ⚠️ Réponse {last_error}, on réessaie dans {wait}s.")
+        except Exception as e:
+            last_error = str(e)
+            print(f"  ⚠️ Erreur : {e}, on réessaie dans {wait}s.")
+        if attempt < retries:
+            time.sleep(wait)
+    print(f"  ❌ Échec définitif après {retries} tentatives : {last_error}")
+    return None
+
+
 def escape_ics(text):
-    """Échappe les caractères spéciaux selon la RFC 5545."""
     if not text:
         return ""
     text = text.replace("\\", "\\\\")
@@ -41,63 +53,63 @@ def escape_ics(text):
     return text
 
 
-def parse_event(item, seen_uids):
-    """Transforme un <item> RSS en dict d'événement, ou None si non exploitable."""
-    title_elem = item.find('title')
-    link_elem = item.find('link')
-    desc_elem = item.find('description')
+def parse_broadcast_page(html):
+    events = []
+    seen = set()
+    total_links = 0
+    total_format_ok = 0
 
-    if title_elem is None or title_elem.text is None:
-        return None
+    # Chaque concert : <a ... title="TITRE - VILLE - PAYS - DATE" ...>TITRE</a> @ SALLE,  VILLE<br/>
+    pattern = re.compile(
+        r'<a\s+[^>]*?title="([^"]+)"[^>]*>(.*?)</a>\s*@\s*([^<,]+),\s*([^<]+?)(?:<br|$)',
+        re.DOTALL
+    )
 
-    title_text = title_elem.text.strip()
-    link = link_elem.text.strip() if link_elem is not None and link_elem.text else ""
+    for m in pattern.finditer(html):
+        total_links += 1
+        title_full = html_module.unescape(m.group(1))
+        venue = html_module.unescape(m.group(3)).strip()
 
-    # Retirer le paramètre de tracking ?rss=... ajouté par le flux
-    # Regex permissive : supprime ?rss=... n'importe où dans l'URL
-    link = re.sub(r'\?rss=[^&\s]*', '', link).strip()
+        # Format : "Titre - Ville - Pays - JJ/MM/AAAA"
+        match = re.match(r'^(.*) - ([^-]+) - ([^-]+) - (\d{2}/\d{2}/\d{4})$', title_full)
+        if not match:
+            continue
+        total_format_ok += 1
 
-    # Date extraite du <title> (le <pubDate> est la date de publication, pas du concert)
-    match = re.search(r'(\d{4}-\d{2}-\d{2})', title_text)
-    if not match:
-        return None
-    date_str = match.group(1)
-    try:
-        event_date = datetime.strptime(date_str, "%Y-%m-%d")
-    except ValueError:
-        return None
+        title, city, country, date_str = match.groups()
+        city = city.strip().lower()
 
-    # Déduplication par lien (ou date+titre si pas de lien)
-    uid = link if link else f"{date_str}-{title_text}"
-    if uid in seen_uids:
-        return None
-    seen_uids.add(uid)
+        if city not in CITIES:
+            continue
 
-    # Nettoyage du titre
-    clean_title = re.sub(r'^\d{4}-\d{2}-\d{2}\s*-\s*', '', title_text)
-    clean_title = re.sub(r'\s*@\s*[^@]+$', '', clean_title).strip()
-    if not clean_title:
-        clean_title = "Concert metal"
+        day, month, year = date_str.split('/')
+        try:
+            event_date = datetime(int(year), int(month), int(day))
+        except ValueError:
+            continue
 
-    # Image (optionnel)
-    image_url = ""
-    if desc_elem is not None and desc_elem.text:
-        img_match = re.search(r'<img[^>]+src="([^"]+)"', desc_elem.text)
-        if img_match:
-            image_url = img_match.group(1)
+        uid = f"{event_date.strftime('%Y%m%d')}-{city}-{venue}-{title}"
+        uid = re.sub(r'\s+', '-', uid.lower())
+        if uid in seen:
+            continue
+        seen.add(uid)
 
-    return {
-        "uid": uid,
-        "date": event_date,
-        "title": clean_title,
-        "link": link,
-        "image": image_url,
-    }
+        events.append({
+            "uid": uid,
+            "date": event_date,
+            "title": title.strip(),
+            "venue": venue,
+            "city": city,
+        })
+
+    print(f"  {total_links} liens '@ Salle, Ville' analysés.")
+    print(f"  {total_format_ok} avec format 'Titre - Ville - Pays - Date'.")
+    return events
 
 
 def event_to_ics(event):
-    """Convertit un dict d'événement en lignes iCalendar."""
     dtstamp = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+    dtstamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     start = event["date"].strftime("%Y%m%d")
     end = (event["date"] + timedelta(days=1)).strftime("%Y%m%d")
 
@@ -108,48 +120,30 @@ def event_to_ics(event):
         f"DTSTART;VALUE=DATE:{start}",
         f"DTEND;VALUE=DATE:{end}",
         f"SUMMARY:{escape_ics(event['title'])}",
+        f"LOCATION:{escape_ics(event['venue'] + ', ' + event['city'].title())}",
+        "END:VEVENT",
     ]
-    if event["link"]:
-        lines.append(f"URL:{event['link']}")
-        lines.append(f"DESCRIPTION:{escape_ics('Source: ' + event['link'])}")
-    if event["image"]:
-        lines.append(f"ATTACH;FMTTYPE=image/jpeg:{event['image']}")
-    lines.append("END:VEVENT")
     return lines
 
 
 def main():
     scraper = create_scraper()
-    seen_uids = set()
-    events = []  # on collecte d'abord tous les événements
+    print(f"Téléchargement de {BROADCAST_URL} ...")
+    response = fetch_page(scraper, BROADCAST_URL, retries=3, wait=5)
+    if response is None:
+        print("Impossible de récupérer la page. Le fichier .ics ne sera pas mis à jour.")
+        return
 
-    for rss_url in RSS_URLS:
-        print(f"Téléchargement de {rss_url} ...")
-        try:
-            response = scraper.get(rss_url, timeout=30)
-            response.raise_for_status()
-            root = ET.fromstring(response.content)
-        except Exception as e:
-            print(f"  ⚠️ Échec pour {rss_url} : {e}")
-            continue
+    print(f"  Page récupérée ({len(response.text)} caractères).")
+    events = parse_broadcast_page(response.text)
+    print(f"  {len(events)} événements Paris/Montreuil trouvés.")
 
-        channel = root.find('channel')
-        if channel is None:
-            print(f"  ⚠️ Pas de <channel> dans {rss_url}")
-            continue
-
-        for item in channel.findall('item'):
-            event = parse_event(item, seen_uids)
-            if event is not None:
-                events.append(event)
-
-    # Tri par date croissante
     events.sort(key=lambda e: e["date"])
 
     ics_lines = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
-        "PRODID:-//Metal Concerts//RSS to ICS//FR",
+        "PRODID:-//Metal Concerts//Broadcast to ICS//FR",
         "CALSCALE:GREGORIAN",
         "X-WR-CALNAME:Concerts Metal Paris & Montreuil",
     ]
@@ -158,7 +152,7 @@ def main():
     ics_lines.append("END:VCALENDAR")
 
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
-        f.write("\r\n".join(ics_lines))  # RFC 5545 : CRLF obligatoire
+        f.write("\r\n".join(ics_lines))
 
     print(f"✅ {OUTPUT_FILE} généré : {len(events)} événements.")
 
