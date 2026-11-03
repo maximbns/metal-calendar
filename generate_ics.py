@@ -5,6 +5,7 @@ en filtrant sur Paris et Montreuil.
 """
 
 import re
+import sys
 import time
 import html as html_module
 from datetime import datetime, timedelta, timezone
@@ -55,19 +56,30 @@ def escape_ics(text):
 
 def parse_broadcast_page(html):
     events = []
-    seen = set()
+    seen_uids = set()
     total_links = 0
     total_format_ok = 0
 
-    # Chaque concert : <a ... title="TITRE - VILLE - PAYS - DATE" ...>TITRE</a> @ SALLE,  VILLE<br/>
-    pattern = re.compile(
-        r'<a\s+[^>]*?title="([^"]+)"[^>]*>(.*?)</a>\s*@\s*([^<,]+),\s*([^<]+?)(?:<br|$)',
+    link_pattern = re.compile(
+        r'<a\s+([^>]*?)>(.*?)</a>\s*@\s*([^<,]+),\s*([^<]+?)(?:<br|$)',
         re.DOTALL
     )
+    attr_href = re.compile(r'href="([^"]+)"')
+    attr_title = re.compile(r'title="([^"]+)"')
 
-    for m in pattern.finditer(html):
+    for m in link_pattern.finditer(html):
         total_links += 1
-        title_full = html_module.unescape(m.group(1))
+        attrs = m.group(1)
+        href_m = attr_href.search(attrs)
+        title_m = attr_title.search(attrs)
+        if not href_m or not title_m:
+            continue
+
+        link = html_module.unescape(href_m.group(1))
+        # Nettoyer le paramètre de tracking ?i=...
+        link = re.sub(r'\?i=\d+$', '', link)
+
+        title_full = html_module.unescape(title_m.group(1))
         venue = html_module.unescape(m.group(3)).strip()
 
         # Format : "Titre - Ville - Pays - JJ/MM/AAAA"
@@ -88,11 +100,11 @@ def parse_broadcast_page(html):
         except ValueError:
             continue
 
-        uid = f"{event_date.strftime('%Y%m%d')}-{city}-{venue}-{title}"
-        uid = re.sub(r'\s+', '-', uid.lower())
-        if uid in seen:
+        # UID = lien du concert (stable et unique) ; fallback si absent
+        uid = link if link else f"{event_date.strftime('%Y%m%d')}-{city}-{venue}-{title}"
+        if uid in seen_uids:
             continue
-        seen.add(uid)
+        seen_uids.add(uid)
 
         events.append({
             "uid": uid,
@@ -100,6 +112,7 @@ def parse_broadcast_page(html):
             "title": title.strip(),
             "venue": venue,
             "city": city,
+            "link": link,
         })
 
     print(f"  {total_links} liens '@ Salle, Ville' analysés.")
@@ -108,7 +121,6 @@ def parse_broadcast_page(html):
 
 
 def event_to_ics(event):
-    dtstamp = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
     dtstamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     start = event["date"].strftime("%Y%m%d")
     end = (event["date"] + timedelta(days=1)).strftime("%Y%m%d")
@@ -121,8 +133,12 @@ def event_to_ics(event):
         f"DTEND;VALUE=DATE:{end}",
         f"SUMMARY:{escape_ics(event['title'])}",
         f"LOCATION:{escape_ics(event['venue'] + ', ' + event['city'].title())}",
-        "END:VEVENT",
     ]
+    if event.get("link"):
+        lines.append(f"URL:{event['link']}")
+        desc = "Plus d'infos : " + event["link"]
+        lines.append(f"DESCRIPTION:{escape_ics(desc)}")
+    lines.append("END:VEVENT")
     return lines
 
 
@@ -131,12 +147,16 @@ def main():
     print(f"Téléchargement de {BROADCAST_URL} ...")
     response = fetch_page(scraper, BROADCAST_URL, retries=3, wait=5)
     if response is None:
-        print("Impossible de récupérer la page. Le fichier .ics ne sera pas mis à jour.")
-        return
+        print("❌ Impossible de récupérer la page.")
+        sys.exit(1)  # déclenche la création d'issue côté GitHub Actions
 
     print(f"  Page récupérée ({len(response.text)} caractères).")
     events = parse_broadcast_page(response.text)
     print(f"  {len(events)} événements Paris/Montreuil trouvés.")
+
+    if len(events) == 0:
+        print("⚠️ Aucun événement trouvé. Le fichier .ics existant n'est pas écrasé.")
+        return  # exit 0 : pas d'alerte, c'est peut-être juste une période creuse
 
     events.sort(key=lambda e: e["date"])
 
