@@ -1,0 +1,196 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Metal Concerts//Broadcast to ICS//FR
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Concerts Metal Paris & Montreuil
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Archspire_-_European_Vacation_Tour_2026-249459.html
+DTSTAMP:20261103T125326Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Archspire - European Vacation Tour 2026
+LOCATION:La Machine du Moulin Rouge\, Paris
+URL:https://www.concerts-metal.com/concert_-_Archspire_-_European_Vacation_Tour_2026-249459.html
+DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Archspire_-_European_Vacation_Tour_2026-249459.html
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Eagles_of_Death_Metal_-_20_Years_of_Death_By_Sexy_Tour_2026-244566.html
+DTSTAMP:20261103T125326Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Eagles of Death Metal - 20 Years of Death By Sexy Tour 2026
+LOCATION:La Cigale\, Paris
+URL:https://www.concerts-metal.com/concert_-_Eagles_of_Death_Metal_-_20_Years_of_Death_By_Sexy_Tour_2026-244566.html
+DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Eagles_of_Death_Metal_-_20_Years_of_Death_By_Sexy_Tour_2026-244566.html
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Krallice_-_Tour_2026-253651.html
+DTSTAMP:20261103T125326Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Krallice - Tour 2026
+LOCATION:Le Chinois\, Montreuil
+URL:https://www.concerts-metal.com/concert_-_Krallice_-_Tour_2026-253651.html
+DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Krallice_-_Tour_2026-253651.html
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Urin___Khlore___Velumium___Solan-276817.html
+DTSTAMP:20261103T125326Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Urin + Khlore + Velumium + Solan
+LOCATION:La Bicyclette\, Montreuil
+URL:https://www.concerts-metal.com/concert_-_Urin___Khlore___Velumium___Solan-276817.html
+DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Urin___Khlore___Velumium___Solan-276817.html
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_AC-DC_-_Live_Tribute_by_Poun__Black_Bomb_A___Smack-267008.html
+DTSTAMP:20261103T125326Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:AC/DC - Live Tribute by Poun' (Black Bomb A) & Smack
+LOCATION:Le Balajo\, Paris
+URL:https://www.concerts-metal.com/concert_-_AC-DC_-_Live_Tribute_by_Poun__Black_Bomb_A___Smack-267008.html
+DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_AC-DC_-_Live_Tribute_by_Poun__Black_Bomb_A___Smack-267008.html
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Beaks_-_Tour_2026-280151.html
+DTSTAMP:20261103T125326Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:Beaks - Tour 2026
+LOCATION:Le Pop-Up!\, Paris
+URL:https://www.concerts-metal.com/concert_-_Beaks_-_Tour_2026-280151.html
+DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Beaks_-_Tour_2026-280151.html
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Eyehategod_-_Fall_EU_Tour_2026-248661.html
+DTSTAMP:20261103T125326Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:Eyehategod - Fall EU Tour 2026
+LOCATION:Le Glazart\, Paris
+URL:https://www.concerts-metal.com/concert_-_Eyehategod_-_Fall_EU_Tour_2026-248661.html
+DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Eyehategod_-_Fall_EU_Tour_2026-248661.html
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Mala_Fama_x_Antipode_-275240.html
+DTSTAMP:20261103T125326Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:Mala Fama x Antipode
+LOCATION:La Télévision\, Paris
+URL:https://www.concerts-metal.com/concert_-_Mala_Fama_x_Antipode_-275240.html
+DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Mala_Fama_x_Antipode_-275240.html
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_The_Hardkiss-239429.html
+DTSTAMP:20261103T125326Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:The Hardkiss
+LOCATION:Backstage By The Mill\, Paris
+URL:https://www.concerts-metal.com/concert_-_The_Hardkiss-239429.html
+DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_The_Hardkiss-239429.html
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Babe_Haven___Latter_-_Tour_2026-261144.html
+DTSTAMP:20261103T125326Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:Babe Haven + Latter - Tour 2026
+LOCATION:Le Chinois\, Montreuil
+URL:https://www.concerts-metal.com/concert_-_Babe_Haven___Latter_-_Tour_2026-261144.html
+DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Babe_Haven___Latter_-_Tour_2026-261144.html
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Coltaine-270704.html
+DTSTAMP:20261103T125326Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:Coltaine
+LOCATION:Backstage By The Mill\, Paris
+URL:https://www.concerts-metal.com/concert_-_Coltaine-270704.html
+DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Coltaine-270704.html
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Wet_Cactus___Karma_Crusa___Milkomeda-264544.html
+DTSTAMP:20261103T125326Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:Wet Cactus + Karma Crusa + Milkomeda
+LOCATION:Le Klub\, Paris
+URL:https://www.concerts-metal.com/concert_-_Wet_Cactus___Karma_Crusa___Milkomeda-264544.html
+DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Wet_Cactus___Karma_Crusa___Milkomeda-264544.html
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Against_The_Current_-_Tour_2026-258552.html
+DTSTAMP:20261103T125326Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Against The Current - Tour 2026
+LOCATION:Le Trianon\, Paris
+URL:https://www.concerts-metal.com/concert_-_Against_The_Current_-_Tour_2026-258552.html
+DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Against_The_Current_-_Tour_2026-258552.html
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_De_Staat_EU-UK_Tour_2026-265991.html
+DTSTAMP:20261103T125326Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:De Staat EU/UK Tour 2026
+LOCATION:La Maroquinerie\, Paris
+URL:https://www.concerts-metal.com/concert_-_De_Staat_EU-UK_Tour_2026-265991.html
+DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_De_Staat_EU-UK_Tour_2026-265991.html
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Lagrimas_-_Tour_2026-257259.html
+DTSTAMP:20261103T125326Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Lagrimas - Tour 2026
+LOCATION:Le Glazart\, Paris
+URL:https://www.concerts-metal.com/concert_-_Lagrimas_-_Tour_2026-257259.html
+DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Lagrimas_-_Tour_2026-257259.html
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Remember_the_Light___Lux-253833.html
+DTSTAMP:20261103T125326Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Remember the Light + Lux
+LOCATION:Péniche Antipode\, Paris
+URL:https://www.concerts-metal.com/concert_-_Remember_the_Light___Lux-253833.html
+DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Remember_the_Light___Lux-253833.html
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Shining_-_Tour_2026-268432.html
+DTSTAMP:20261103T125326Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Shining - Tour 2026
+LOCATION:Backstage By The Mill\, Paris
+URL:https://www.concerts-metal.com/concert_-_Shining_-_Tour_2026-268432.html
+DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Shining_-_Tour_2026-268432.html
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_The_Shits___Contre-Feux___Carte_Vitale-277240.html
+DTSTAMP:20261103T125326Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:The Shits + Contre-Feux + Carte Vitale
+LOCATION:Le Cirque Electrique\, Paris
+URL:https://www.concerts-metal.com/concert_-_The_Shits___Contre-Feux___Carte_Vitale-277240.html
+DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_The_Shits___Contre-Feux___Carte_Vitale-277240.html
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Les_3_Fromages_-_le_concert_des_20_ans-236685.html
+DTSTAMP:20261103T125326Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Les 3 Fromages - le concert des 20 ans
+LOCATION:L'Olympia\, Paris
+URL:https://www.concerts-metal.com/concert_-_Les_3_Fromages_-_le_concert_des_20_ans-236685.html
+DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Les_3_Fromages_-_le_concert_des_20_ans-236685.html
+END:VEVENT
+END:VCALENDAR
