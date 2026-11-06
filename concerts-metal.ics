@@ -4,38 +4,8 @@ PRODID:-//Metal Concerts//Broadcast to ICS//FR
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Concerts Metal Paris & Montreuil
 BEGIN:VEVENT
-UID:https://www.concerts-metal.com/concert_-_Babe_Haven___Latter_-_Tour_2026-261144.html
-DTSTAMP:20261105T135050Z
-DTSTART;VALUE=DATE:20261105
-DTEND;VALUE=DATE:20261106
-SUMMARY:Babe Haven + Latter - Tour 2026
-LOCATION:Le Chinois\, Montreuil
-URL:https://www.concerts-metal.com/concert_-_Babe_Haven___Latter_-_Tour_2026-261144.html
-DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Babe_Haven___Latter_-_Tour_2026-261144.html
-END:VEVENT
-BEGIN:VEVENT
-UID:https://www.concerts-metal.com/concert_-_Coltaine-270704.html
-DTSTAMP:20261105T135050Z
-DTSTART;VALUE=DATE:20261105
-DTEND;VALUE=DATE:20261106
-SUMMARY:Coltaine
-LOCATION:Backstage By The Mill\, Paris
-URL:https://www.concerts-metal.com/concert_-_Coltaine-270704.html
-DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Coltaine-270704.html
-END:VEVENT
-BEGIN:VEVENT
-UID:https://www.concerts-metal.com/concert_-_Wet_Cactus___Karma_Crusa___Milkomeda-264544.html
-DTSTAMP:20261105T135050Z
-DTSTART;VALUE=DATE:20261105
-DTEND;VALUE=DATE:20261106
-SUMMARY:Wet Cactus + Karma Crusa + Milkomeda
-LOCATION:Le Klub\, Paris
-URL:https://www.concerts-metal.com/concert_-_Wet_Cactus___Karma_Crusa___Milkomeda-264544.html
-DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Wet_Cactus___Karma_Crusa___Milkomeda-264544.html
-END:VEVENT
-BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Against_The_Current_-_Tour_2026-258552.html
-DTSTAMP:20261105T135050Z
+DTSTAMP:20261106T133623Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Against The Current - Tour 2026
@@ -45,7 +15,7 @@ DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Against_The_
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_De_Staat_EU-UK_Tour_2026-265991.html
-DTSTAMP:20261105T135050Z
+DTSTAMP:20261106T133623Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:De Staat EU/UK Tour 2026
@@ -55,7 +25,7 @@ DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_De_Staat_EU-
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Lagrimas_-_Tour_2026-257259.html
-DTSTAMP:20261105T135050Z
+DTSTAMP:20261106T133623Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Lagrimas - Tour 2026
@@ -65,7 +35,7 @@ DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Lagrimas_-_T
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Remember_the_Light___Lux-253833.html
-DTSTAMP:20261105T135050Z
+DTSTAMP:20261106T133623Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Remember the Light + Lux
@@ -75,7 +45,7 @@ DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Remember_the
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Shining_-_Tour_2026-268432.html
-DTSTAMP:20261105T135050Z
+DTSTAMP:20261106T133623Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Shining - Tour 2026
@@ -85,7 +55,7 @@ DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Shining_-_To
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_The_Shits___Contre-Feux___Carte_Vitale-277240.html
-DTSTAMP:20261105T135050Z
+DTSTAMP:20261106T133623Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:The Shits + Contre-Feux + Carte Vitale
@@ -95,7 +65,7 @@ DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_The_Shits___
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Fractal_Gates_-_The_Dawn_Razor_-_Chabtan_-_La_Java_Paris-262689.html
-DTSTAMP:20261105T135050Z
+DTSTAMP:20261106T133623Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261108
 SUMMARY:Fractal Gates - The Dawn Razor - Chabtan - La Java Paris
@@ -105,7 +75,7 @@ DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Fractal_Gate
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Les_3_Fromages_-_le_concert_des_20_ans-236685.html
-DTSTAMP:20261105T135050Z
+DTSTAMP:20261106T133623Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261108
 SUMMARY:Les 3 Fromages - le concert des 20 ans
@@ -115,7 +85,7 @@ DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Les_3_Fromag
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Pyrex_-_Traumrex_tour-279996.html
-DTSTAMP:20261105T135050Z
+DTSTAMP:20261106T133623Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261108
 SUMMARY:Pyrex - Traumrex tour
@@ -125,12 +95,62 @@ DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Pyrex_-_Trau
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Ultra_Sunn_-_Tour_2026-266623.html
-DTSTAMP:20261105T135050Z
+DTSTAMP:20261106T133623Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261108
 SUMMARY:Ultra Sunn - Tour 2026
 LOCATION:La Marbrerie\, Montreuil
 URL:https://www.concerts-metal.com/concert_-_Ultra_Sunn_-_Tour_2026-266623.html
 DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Ultra_Sunn_-_Tour_2026-266623.html
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_InDie_or_Die_2__MIDWIFE_et_Devin_Shaffer-269137.html
+DTSTAMP:20261106T133623Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:I̶n̶Die or Die #2: MIDWIFE et Devin Shaffer
+LOCATION:Le Point Ephémère\, Paris
+URL:https://www.concerts-metal.com/concert_-_InDie_or_Die_2__MIDWIFE_et_Devin_Shaffer-269137.html
+DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_InDie_or_Die_2__MIDWIFE_et_Devin_Shaffer-269137.html
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Sunday_Tribute__Fleetwood_Mac-260413.html
+DTSTAMP:20261106T133623Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:Sunday Tribute – Fleetwood Mac
+LOCATION:Supersonic\, Paris
+URL:https://www.concerts-metal.com/concert_-_Sunday_Tribute__Fleetwood_Mac-260413.html
+DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Sunday_Tribute__Fleetwood_Mac-260413.html
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_The_Jackson_Pollock_-_Tour_2026-277913.html
+DTSTAMP:20261106T133623Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:The Jackson Pollock - Tour 2026
+LOCATION:L'armony\, Montreuil
+URL:https://www.concerts-metal.com/concert_-_The_Jackson_Pollock_-_Tour_2026-277913.html
+DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_The_Jackson_Pollock_-_Tour_2026-277913.html
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Beast_in_Black_-_Ressurection_Tour_2026-231401.html
+DTSTAMP:20261106T133623Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Beast in Black - Ressurection Tour 2026
+LOCATION:L'Olympia\, Paris
+URL:https://www.concerts-metal.com/concert_-_Beast_in_Black_-_Ressurection_Tour_2026-231401.html
+DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Beast_in_Black_-_Ressurection_Tour_2026-231401.html
+END:VEVENT
+BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Future_Palace_-_Tour_2026-236794.html
+DTSTAMP:20261106T133623Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Future Palace - Tour 2026
+LOCATION:Backstage By The Mill\, Paris
+URL:https://www.concerts-metal.com/concert_-_Future_Palace_-_Tour_2026-236794.html
+DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Future_Palace_-_Tour_2026-236794.html
 END:VEVENT
 END:VCALENDAR
