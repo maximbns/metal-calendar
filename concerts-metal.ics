@@ -4,48 +4,8 @@ PRODID:-//Metal Concerts//Broadcast to ICS//FR
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Concerts Metal Paris & Montreuil
 BEGIN:VEVENT
-UID:https://www.concerts-metal.com/concert_-_Beast_in_Black_-_Ressurection_Tour_2026-231401.html
-DTSTAMP:20261109T145433Z
-DTSTART;VALUE=DATE:20261109
-DTEND;VALUE=DATE:20261110
-SUMMARY:Beast in Black - Ressurection Tour 2026
-LOCATION:L'Olympia\, Paris
-URL:https://www.concerts-metal.com/concert_-_Beast_in_Black_-_Ressurection_Tour_2026-231401.html
-DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Beast_in_Black_-_Ressurection_Tour_2026-231401.html
-END:VEVENT
-BEGIN:VEVENT
-UID:https://www.concerts-metal.com/concert_-_Despised_Icon___Carnifex___Suffocation_-_Tour_2026-247749.html
-DTSTAMP:20261109T145433Z
-DTSTART;VALUE=DATE:20261109
-DTEND;VALUE=DATE:20261110
-SUMMARY:Despised Icon + Carnifex + Suffocation - Tour 2026
-LOCATION:La Machine du Moulin Rouge\, Paris
-URL:https://www.concerts-metal.com/concert_-_Despised_Icon___Carnifex___Suffocation_-_Tour_2026-247749.html
-DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Despised_Icon___Carnifex___Suffocation_-_Tour_2026-247749.html
-END:VEVENT
-BEGIN:VEVENT
-UID:https://www.concerts-metal.com/concert_-_Future_Palace_-_Tour_2026-236794.html
-DTSTAMP:20261109T145433Z
-DTSTART;VALUE=DATE:20261109
-DTEND;VALUE=DATE:20261110
-SUMMARY:Future Palace - Tour 2026
-LOCATION:Backstage By The Mill\, Paris
-URL:https://www.concerts-metal.com/concert_-_Future_Palace_-_Tour_2026-236794.html
-DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Future_Palace_-_Tour_2026-236794.html
-END:VEVENT
-BEGIN:VEVENT
-UID:https://www.concerts-metal.com/concert_-_Shoreline_-_Tour_2026-251199.html
-DTSTAMP:20261109T145433Z
-DTSTART;VALUE=DATE:20261109
-DTEND;VALUE=DATE:20261110
-SUMMARY:Shoreline - Tour 2026
-LOCATION:Supersonic\, Paris
-URL:https://www.concerts-metal.com/concert_-_Shoreline_-_Tour_2026-251199.html
-DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Shoreline_-_Tour_2026-251199.html
-END:VEVENT
-BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Allt_-_European_Tour_2026-244481.html
-DTSTAMP:20261109T145433Z
+DTSTAMP:20261110T140724Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Allt - European Tour 2026
@@ -55,7 +15,7 @@ DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Allt_-_Europ
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Master_Boot_Record___Fulci_-_Tour_2026-246856.html
-DTSTAMP:20261109T145433Z
+DTSTAMP:20261110T140724Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Master Boot Record + Fulci - Tour 2026
@@ -65,7 +25,7 @@ DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Master_Boot_
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Sheer_Mag-270039.html
-DTSTAMP:20261109T145433Z
+DTSTAMP:20261110T140724Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Sheer Mag
@@ -75,7 +35,7 @@ DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Sheer_Mag-27
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Cage_Fight_-_Tour_2026-264533.html
-DTSTAMP:20261109T145433Z
+DTSTAMP:20261110T140724Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261112
 SUMMARY:Cage Fight - Tour 2026
@@ -85,7 +45,7 @@ DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Cage_Fight_-
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_FFF_-_Tour_2026-235817.html
-DTSTAMP:20261109T145433Z
+DTSTAMP:20261110T140724Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261112
 SUMMARY:FFF - Tour 2026
@@ -95,7 +55,7 @@ DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_FFF_-_Tour_2
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_The_Set___Who_I_Am___Ordem-275276.html
-DTSTAMP:20261109T145433Z
+DTSTAMP:20261110T140724Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261112
 SUMMARY:The S.e.t + Who I Am + Ordem
@@ -105,7 +65,7 @@ DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_The_Set___Wh
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Anneke_Van_Giersbergen_-_Tour_2026-246732.html
-DTSTAMP:20261109T145433Z
+DTSTAMP:20261110T140724Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
 SUMMARY:Anneke Van Giersbergen - Tour 2026
@@ -115,7 +75,7 @@ DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Anneke_Van_G
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_The_5_Rosies_en_concert_hommage__AC-DC__la_Cigale_le_12-11-269900.html
-DTSTAMP:20261109T145433Z
+DTSTAMP:20261110T140724Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
 SUMMARY:The 5 Rosies en concert hommage à AC/DC à la Cigale le 12/11
@@ -125,7 +85,7 @@ DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_The_5_Rosies
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Divine_Shade___Koahk-260414.html
-DTSTAMP:20261109T145433Z
+DTSTAMP:20261110T140724Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Divine Shade + Koahk
@@ -135,7 +95,7 @@ DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Divine_Shade
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Fontaines_DC_-_EU___UK_Tour_2026-265585.html
-DTSTAMP:20261109T145433Z
+DTSTAMP:20261110T140724Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Fontaines D.C. - EU & UK Tour 2026
@@ -144,8 +104,18 @@ URL:https://www.concerts-metal.com/concert_-_Fontaines_DC_-_EU___UK_Tour_2026-26
 DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Fontaines_DC_-_EU___UK_Tour_2026-265585.html
 END:VEVENT
 BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_Harfang___Hachiko-282061.html
+DTSTAMP:20261110T140724Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Harfang + Hachiko
+LOCATION:Péniche Antipode\, Paris
+URL:https://www.concerts-metal.com/concert_-_Harfang___Hachiko-282061.html
+DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Harfang___Hachiko-282061.html
+END:VEVENT
+BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Roadrunners__la_Marbrerie__Montreuil_-281361.html
-DTSTAMP:20261109T145433Z
+DTSTAMP:20261110T140724Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Roadrunners à la Marbrerie à Montreuil
