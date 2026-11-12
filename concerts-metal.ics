@@ -4,38 +4,8 @@ PRODID:-//Metal Concerts//Broadcast to ICS//FR
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Concerts Metal Paris & Montreuil
 BEGIN:VEVENT
-UID:https://www.concerts-metal.com/concert_-_Cage_Fight_-_Tour_2026-264533.html
-DTSTAMP:20261111T132419Z
-DTSTART;VALUE=DATE:20261111
-DTEND;VALUE=DATE:20261112
-SUMMARY:Cage Fight - Tour 2026
-LOCATION:Backstage By The Mill\, Paris
-URL:https://www.concerts-metal.com/concert_-_Cage_Fight_-_Tour_2026-264533.html
-DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Cage_Fight_-_Tour_2026-264533.html
-END:VEVENT
-BEGIN:VEVENT
-UID:https://www.concerts-metal.com/concert_-_FFF_-_Tour_2026-235817.html
-DTSTAMP:20261111T132419Z
-DTSTART;VALUE=DATE:20261111
-DTEND;VALUE=DATE:20261112
-SUMMARY:FFF - Tour 2026
-LOCATION:L'Olympia\, Paris
-URL:https://www.concerts-metal.com/concert_-_FFF_-_Tour_2026-235817.html
-DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_FFF_-_Tour_2026-235817.html
-END:VEVENT
-BEGIN:VEVENT
-UID:https://www.concerts-metal.com/concert_-_The_Set___Who_I_Am___Ordem-275276.html
-DTSTAMP:20261111T132419Z
-DTSTART;VALUE=DATE:20261111
-DTEND;VALUE=DATE:20261112
-SUMMARY:The S.e.t + Who I Am + Ordem
-LOCATION:Le Klub\, Paris
-URL:https://www.concerts-metal.com/concert_-_The_Set___Who_I_Am___Ordem-275276.html
-DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_The_Set___Who_I_Am___Ordem-275276.html
-END:VEVENT
-BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Anneke_Van_Giersbergen_-_Tour_2026-246732.html
-DTSTAMP:20261111T132419Z
+DTSTAMP:20261112T142850Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
 SUMMARY:Anneke Van Giersbergen - Tour 2026
@@ -45,7 +15,7 @@ DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Anneke_Van_G
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_The_5_Rosies_en_concert_hommage__AC-DC__la_Cigale_le_12-11-269900.html
-DTSTAMP:20261111T132419Z
+DTSTAMP:20261112T142850Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
 SUMMARY:The 5 Rosies en concert hommage à AC/DC à la Cigale le 12/11
@@ -55,7 +25,7 @@ DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_The_5_Rosies
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Divine_Shade___Koahk-260414.html
-DTSTAMP:20261111T132419Z
+DTSTAMP:20261112T142850Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Divine Shade + Koahk
@@ -65,7 +35,7 @@ DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Divine_Shade
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Fontaines_DC_-_EU___UK_Tour_2026-265585.html
-DTSTAMP:20261111T132419Z
+DTSTAMP:20261112T142850Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Fontaines D.C. - EU & UK Tour 2026
@@ -75,7 +45,7 @@ DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Fontaines_DC
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Harfang___Hachiko-282061.html
-DTSTAMP:20261111T132419Z
+DTSTAMP:20261112T142850Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Harfang + Hachiko
@@ -85,7 +55,7 @@ DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Harfang___Ha
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Roadrunners__la_Marbrerie__Montreuil_-281361.html
-DTSTAMP:20261111T132419Z
+DTSTAMP:20261112T142850Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Roadrunners à la Marbrerie à Montreuil
@@ -95,7 +65,7 @@ DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Roadrunners_
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_President_-_Tour_2026-253695.html
-DTSTAMP:20261111T132419Z
+DTSTAMP:20261112T142850Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:President - Tour 2026
@@ -105,7 +75,7 @@ DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_President_-_
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Strangelove__The_Depeche_Mode_Experience__la_Salle_Pleyel-261574.html
-DTSTAMP:20261111T132419Z
+DTSTAMP:20261112T142850Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Strangelove – The Depeche Mode Experience à la Salle Pleyel
@@ -114,8 +84,18 @@ URL:https://www.concerts-metal.com/concert_-_Strangelove__The_Depeche_Mode_Exper
 DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_Strangelove__The_Depeche_Mode_Experience__la_Salle_Pleyel-261574.html
 END:VEVENT
 BEGIN:VEVENT
+UID:https://www.concerts-metal.com/concert_-_The_Cloverhearts_-_Germaniac_Tour_2026-272366.html
+DTSTAMP:20261112T142850Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:The Cloverhearts - Germaniac Tour 2026
+LOCATION:Nouveau Casino\, Paris
+URL:https://www.concerts-metal.com/concert_-_The_Cloverhearts_-_Germaniac_Tour_2026-272366.html
+DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_The_Cloverhearts_-_Germaniac_Tour_2026-272366.html
+END:VEVENT
+BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_The_Vintage_Caravan_-_Portals_Tour_2026-254240.html
-DTSTAMP:20261111T132419Z
+DTSTAMP:20261112T142850Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:The Vintage Caravan - Portals Tour 2026
@@ -125,7 +105,7 @@ DESCRIPTION:Plus d'infos : https://www.concerts-metal.com/concert_-_The_Vintage_
 END:VEVENT
 BEGIN:VEVENT
 UID:https://www.concerts-metal.com/concert_-_Walls_Of_Jericho_-_Tour_2026-265148.html
-DTSTAMP:20261111T132419Z
+DTSTAMP:20261112T142850Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Walls Of Jericho - Tour 2026
