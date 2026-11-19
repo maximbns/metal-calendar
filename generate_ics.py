@@ -13,7 +13,7 @@ import time
 import unicodedata
 import html as html_module
 from datetime import datetime, timedelta, timezone
-import cloudscraper
+from curl_cffi import requests as curl_requests
 
 BROADCAST_URL = "https://broadcast.concerts-metal.com/i-28__fr.html"
 OUTPUT_FILE = "concerts-metal.ics"
@@ -22,9 +22,7 @@ ARTICLES = {"the", "a", "an", "le", "la", "les", "l", "un", "une"}
 
 
 def create_scraper():
-    return cloudscraper.create_scraper(
-        browser={'browser': 'chrome', 'platform': 'windows', 'desktop': True}
-    )
+    return curl_requests.Session(impersonate="chrome")
 
 
 def fetch_page(scraper, url, retries=3, wait=5):
@@ -35,6 +33,7 @@ def fetch_page(scraper, url, retries=3, wait=5):
             response = scraper.get(url, timeout=30)
             if response.status_code == 200:
                 return response
+            # Si le statut n'est pas 200, on considère que c'est une erreur
             last_error = f"HTTP {response.status_code}"
             print(f"  ⚠️ Réponse {last_error}, on réessaie dans {wait}s.")
         except Exception as e:

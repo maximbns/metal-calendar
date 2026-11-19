@@ -21,7 +21,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install cloudscraper
+        run: pip install curl_cffi
 
       - name: Generate ICS
         run: python generate_ics.py
